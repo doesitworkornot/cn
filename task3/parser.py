@@ -16,8 +16,7 @@ def parse(soup):
     print(img[0]['style'])
 
 
-def main():
-    url = 'https://novosibirsk.svetofors.ru/tovari/vostochnie-sladosti/'
+def main(url):
     for i in range(3):
         if i == 0:
             url_next = url
@@ -30,4 +29,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    url = 'https://novosibirsk.svetofors.ru/tovari/vostochnie-sladosti/'
+    main(url)
